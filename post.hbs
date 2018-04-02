@@ -1,5 +1,10 @@
 {{!< default}}
 
+<aside role="banner" class="cover">
+  <div data-load-image="https://s3.amazonaws.com/bestcraftbeerbars/2018/04/patrick-tomasso-499112-unsplash.jpg" class="cover-image image-loaded" style="background-image: url(&quot;https://s3.amazonaws.com/bestcraftbeerbars/2018/04/patrick-tomasso-499112-unsplash.jpg&quot;);"></div>
+  <div class="cover-container"></div>
+</aside>
+
 <section class="wrapper wrapper-post">
   <div class="wrapper-container">
     <article itemscope itemtype="http://schema.org/BlogPosting" role="article" class="post {{post_class}}">
@@ -28,21 +33,6 @@
             {{! A subtitle not available in Ghosts yet }}
             <!--h2 itemprop="about" class="post-subtitle"></h2-->
           </header>
-          <aside class="post-side">
-            <div class="post-author">
-              {{#if author.profile_image}}
-                <a href="{{author.website}}" class="post-author-avatar">
-                  <img src="{{author.profile_image}}" alt="{{author.name}}">
-                </a>
-              {{/if}}
-              <div class="post-author-info">
-                <a href="{{author.website}}" class="post-author-name">
-                  {{author.name}}
-                </a>
-                <p class="post-author-bio">{{author.bio}}</p>
-              </div>
-            </div>
-          </aside>
           <div itemprop="articleBody" class="post-body">
             {{content}}
           </div>

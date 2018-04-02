@@ -1,7 +1,11 @@
 {{!< default}}
 
 <aside role="banner" class="cover">
-  <div data-load-image="{{img_url}}" class="cover-image"></div>
+  {{#post}}
+    {{#if feature_image}}
+      <div data-load-image="{{img_url feature_image}}" class="cover-image"></div>
+    {{/if}}
+  {{/post}}
   <div class="cover-container"></div>
 </aside>
 
